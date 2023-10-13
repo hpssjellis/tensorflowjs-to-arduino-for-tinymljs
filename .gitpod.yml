@@ -6,6 +6,7 @@ tasks:
   - init: pyenv versions                                                           &&
           pip3 install --upgrade pip                                               &&
           pip3 install tensorflowjs                                                &&
+          pip3 install tensorflow                                                  &&
           pip3 install netron    "dask[delayed]"                                   &&
           chmod +x a01-convert-tfjs-arduino.sh                                     &&       
           tflite_convert --help                                                    &&
