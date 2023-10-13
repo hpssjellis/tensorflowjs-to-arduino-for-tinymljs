@@ -8,7 +8,8 @@ tasks:
           pip3 install tensorflowjs                                                &&
           pip3 install tensorflow                                                  &&
           pip3 install netron    "dask[delayed]"                                   &&
-          chmod +x a01-convert-tfjs-arduino.sh                                     &&       
+          chmod +x a01-convert-tfjs-arduino.sh                                     &&     
+          cp  a01-convert-tfjs-arduino.sh ./my-models                             &&      
           tflite_convert --help                                                    &&
           tensorflowjs_converter --help                                            &&
           xxd --help                                                               &&
