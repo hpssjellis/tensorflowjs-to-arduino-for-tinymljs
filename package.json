@@ -1,0 +1,21 @@
+{
+  "name": "tensorflowjs-to-arduino-for-tinymljs",
+  "version": "0.3.1",
+  "description": "Tensorflow model converter for javascript",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/hpssjellis/tensorflowjs-to-arduino-for-tinymljs"
+  },
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@tensorflow/tfjs-core": "4.11.0"
+  },
+  "devDependencies": {
+    "@tensorflow/tfjs-core": "4.11.0",
+    "netron": "0.1.4-1",
+    "@tensorflow/tfjs-tflite": "0.0.1-alpha.10"   
+  },
+  "scripts": {
+    "build": ""
+  }
+}
