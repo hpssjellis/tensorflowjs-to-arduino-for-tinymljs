@@ -17,4 +17,35 @@ Then run ```./a01-convert-tfjs-arduino.sh```
 
 Gotchas   When making your own files the ````model.json```` file is made with a link to the ```model.weights.bin``` file, if you change the name of the binary file the model.json fle will not link to it properly
 
-I havn't yet figured out how to get this to work on your local machine.
+## Install on a local machine
+
+I assume python is installed probably best to have Python3 installed.
+
+```
+pip install tensorflowjs
+
+python -m site --user-base
+```
+
+to the above reply add
+```
+\bin\tensorflowjs_converter -h
+```
+Then run the commands for your files which are in the a01-convert-tfjs-arduino.sh bash file
+
+```
+tensorflowjs_converter --input_format=tfjs_layers_model --output_format=keras_saved_model ./model.json ./
+
+
+tflite_convert --keras_model_file ./ --output_file ./model.tflite
+
+
+xxd -i model.tflite model.h
+
+```
+
+Then you can load yout model.tflite file onto the https://netron.app/ website to visualize it and then add the model.h file into your arduino machine learning code as it;s own include file.
+
+See the Arduino ready library at   https://github.com/hpssjellis/RocksettaTinyML download the zip file and install it into the arduino ide using the normal zip file libary upload method.
+sketch --> include library --> add .zip file
+
