@@ -109,5 +109,36 @@ Upload your tFLITE file and get the web to convert it into a c-header model.h fi
 
 
 
+# May 2024 trying to update. so far
+
+
+python.exe -m pip install --upgrade pip
+pip3 install --upgrade pip
+
+python -m venv myenv2
+myenv2\scripts\activate
+
+pip3 install tensorflowjs
+pip3 install tensorflow==2.15.0
+pip3 install tensorflow-hub
+pip3 install netron    "dask[delayed]"
+
+$env:TF_ENABLE_ONEDNN_OPTS=0
+
+
+tflite_convert --help
+tensorflowjs_converter --help
+
+xxd --help
+
+
+https://sourceforge.net/projects/xxd-for-windows/
+
+
+in power shell try    
+Format-Hex '.\your-file-name'
+
+
+
 
 
