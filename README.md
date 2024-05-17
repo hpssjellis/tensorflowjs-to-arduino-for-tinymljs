@@ -144,6 +144,8 @@ Format-Hex '.\your-file-name'
 
 this set works
 
+
+```
 pip list
 --------------------------------- ---------
 absl-py                           2.1.0
@@ -311,5 +313,5 @@ wrapt                             1.12.1
 wurlitzer                         3.1.0
 zipp                              3.5.0
 
-
+```
 
