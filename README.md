@@ -113,15 +113,21 @@ Upload your tFLITE file and get the web to convert it into a c-header model.h fi
 
 
 python.exe -m pip install --upgrade pip
+
 pip3 install --upgrade pip
 
 python -m venv myenv2
+
 myenv2\scripts\activate
 
 pip3 install tensorflowjs
+
 pip3 install tensorflow==2.15.0
+
 pip3 install tensorflow-hub
+
 pip3 install netron    "dask[delayed]"
+
 
 $env:TF_ENABLE_ONEDNN_OPTS=0
 
