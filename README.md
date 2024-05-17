@@ -321,3 +321,92 @@ zipp                              3.5.0
 
 ```
 
+More attempts  I think it is my python version is either to recent or not old enough
+
+new instructions
+
+python.exe -m pip install --upgrade pip
+
+python -m venv myenv10
+myenv10\scripts\activate
+
+try the newest versions but if that doesn't work these versions will work.
+pip install tensorflow==2.13.1
+pip install tensorflow-decision-forests==1.4.0
+pip install tensorflowjs==4.19.0 --no-deps
+
+
+pip install tensorflow-decision-forests==1.8.0 --no-deps
+pip install tensorflow-decision-forests==1.5.0
+
+
+--ignore-installed tensorflow_decision_forests tensorflow tensorflow-io-gcs-filesystem tensorstore
+
+tflite_convert --help
+tensorflowjs_converter --help
+
+
+
+
+
+
+pip install tensorflowjs --no-deps
+
+
+
+
+
+
+
+pip install tensorflowjs==4.19.0
+
+
+
+
+
+
+pip install tensorflow==2.13.1
+pip install tensorflowjs==4.19.0
+
+tflite_convert --help
+tensorflowjs_converter --help
+
+
+
+
+
+
+
+
+#!/bin/bash
+
+tensorflowjs_converter --input_format=tfjs_layers_model --output_format=keras_saved_model ./model.json ./
+tflite_convert --keras_model_file ./ --output_file ./model.tflite
+xxd -i model.tflite model.h
+
+
+python.exe -m pip install --upgrade pip
+pip3 install --upgrade pip
+
+python -m venv myenv2
+myenv2\scripts\activate
+
+pip3 install tensorflowjs
+pip3 install tensorflow==2.15.0
+pip3 install tensorflow-hub
+pip3 install netron    "dask[delayed]"
+
+$env:TF_ENABLE_ONEDNN_OPTS=0
+
+
+tflite_convert --help
+tensorflowjs_converter --help
+
+xxd --help
+
+
+https://sourceforge.net/projects/xxd-for-windows/
+
+
+in power shell try    
+Format-Hex '.\your-file-name'
