@@ -14,8 +14,9 @@ Not presently working on windows, hopefully that changes.
 4. Activate that environment (note it has a folder you can stay out of )  ```source myenv10/bin/activate```
 5. ```pip install tensorflow```
 6. ```pip install tensorflowjs```
-7. ```tflite_convert --help```
-8. ```tensorflowjs_converter --help```
+7. ```pip install tensorRT```
+8. ```tflite_convert --help```
+9. ```tensorflowjs_converter --help```
 9.```tensorflowjs_converter --input_format=tfjs_layers_model --output_format=keras_saved_model ./model.json ./```  Convert tfjs file to keras
 10. ```tflite_convert --keras_model_file ./ --output_file ./model.tflite```   Convert Keras file to tflite file
 11. ```xxd -i model.tflite model.h``` Convert tflite file to a c-header file (This needs xxd installed, several ways to do this also can do it from a web page) 
