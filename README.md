@@ -9,12 +9,13 @@ Not presently working on windows, hopefully that changes.
 
 
 1. Go to the location you downloaded the model .json and model.bin files from https://hpssjellis.github.io/tinyMLjs/public/index.html
-2. Install a virtual environment  ```python -m venv myenv10```
-3. Activate that environment (note it has a folder you can stay out of )  ```myenv10\scripts\activate```
-4. ```pip install tensorflow```
-5. ```pip install tensorflowjs```
-6. ```tflite_convert --help```
-7. ```tflite_convert --help tensorflowjs_converter --help```
+2. Instal venv  ```sudo apt install python3.12-venv```    so you can work in an environment and not have other things mess it up
+3. Install a virtual environment  ```python3 -m venv myenv10```
+4. Activate that environment (note it has a folder you can stay out of )  ```source myenv10/bin/activate```
+5. ```pip install tensorflow```
+6. ```pip install tensorflowjs```
+7. ```tflite_convert --help```
+8. ```tflite_convert --help tensorflowjs_converter --help```
 8.```tensorflowjs_converter --input_format=tfjs_layers_model --output_format=keras_saved_model ./model.json ./```  Convert tfjs file to keras
 9. ```tflite_convert --keras_model_file ./ --output_file ./model.tflite```   Convert Keras file to tflite file
 10. ```xxd -i model.tflite model.h``` Convert tflite file to a c-header file (This needs xxd installed, several ways to do this also can do it from a web page) 
