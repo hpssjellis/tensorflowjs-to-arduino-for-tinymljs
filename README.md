@@ -1,6 +1,44 @@
 # tensorflowjs-to-arduino-for-tinymljs
 
 
+
+# install on your own Linux (Ubuntu) machine.
+Not presently working on windows, hopefully that changes.
+
+## The steps   (Suppossedly)
+
+
+1. Go to the location you downloaded the model .json and model.bin files from https://hpssjellis.github.io/tinyMLjs/public/index.html
+2. Install a virtual environment  ```python -m venv myenv10```
+3. Activate that environment (note it has a folder you can stay out of )  ```myenv10\scripts\activate```
+4. ```pip install tensorflow```
+5. ```pip install tensorflowjs```
+6. ```tflite_convert --help```
+7. ```tflite_convert --help tensorflowjs_converter --help```
+8.```tensorflowjs_converter --input_format=tfjs_layers_model --output_format=keras_saved_model ./model.json ./```  Convert tfjs file to keras
+9. ```tflite_convert --keras_model_file ./ --output_file ./model.tflite```   Convert Keras file to tflite file
+10. ```xxd -i model.tflite model.h``` Convert tflite file to a c-header file (This needs xxd installed, several ways to do this also can do it from a web page) 
+
+
+Non of the above work for me that is why I have the other options
+
+
+1. use python notebooks  https://colab.research.google.com/drive/1OgCcKhklL3EH_SdWHdtlb5dbtYvjGQnn?usp=sharing   (run both sketches then upload your files and run the last sketch again)
+2. This repo  https://github.com/hpssjellis/Gitpod-auto-tensorflowJS-to-arduino  and run the gitpod which has a file that does the conversions. Basically it installs the above and then you can run the commands or a bash file I have ready to do the conversions for you. The autoloading gitpod is here https://gitpod.io/#github.com/hpssjellis/Gitpod-auto-tensorflowJS-to-arduino
+.
+
+
+.
+
+
+
+
+.
+
+
+# The old stuff
+
+
 This github repository is at   https://github.com/hpssjellis/tensorflowjs-to-arduino-for-tinymljs
 
 if you want to load it as a Gitpod click  https://gitpod.io/#github.com/hpssjellis/tensorflowjs-to-arduino-for-tinymljs
@@ -16,6 +54,9 @@ Then run ```./a01-convert-tfjs-arduino.sh```
 
 
 Gotchas   When making your own files the ````model.json```` file is made with a link to the ```model.weights.bin``` file, if you change the name of the binary file the model.json fle will not link to it properly
+
+
+
 
 ## Install on a local machines
 ### DRAFT Instructions
