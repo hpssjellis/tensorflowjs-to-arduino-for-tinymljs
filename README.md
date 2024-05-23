@@ -4,6 +4,7 @@
 
 # install on your own Linux (Ubuntu) machine.
 Not presently working on windows, hopefully that changes.
+Actually presently I can't even get this working on Ubuntu. Try the ipython https://colab.research.google.com/drive/1OgCcKhklL3EH_SdWHdtlb5dbtYvjGQnn?usp=sharing   or gitpod options  https://gitpod.io/#github.com/hpssjellis/Gitpod-auto-tensorflowJS-to-arduino
 
 ## The steps   (Suppossedly)
 
