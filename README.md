@@ -17,9 +17,9 @@ Not presently working on windows, hopefully that changes.
 7. ```pip install tensorRT```
 8. ```tflite_convert --help```
 9. ```tensorflowjs_converter --help```
-9.```tensorflowjs_converter --input_format=tfjs_layers_model --output_format=keras_saved_model ./model.json ./```  Convert tfjs file to keras
-10. ```tflite_convert --keras_model_file ./ --output_file ./model.tflite```   Convert Keras file to tflite file
-11. ```xxd -i model.tflite model.h``` Convert tflite file to a c-header file (This needs xxd installed, several ways to do this also can do it from a web page) 
+10.```tensorflowjs_converter --input_format=tfjs_layers_model --output_format=keras_saved_model ./model.json ./```  Convert tfjs file to keras
+11. ```tflite_convert --keras_model_file ./ --output_file ./model.tflite```   Convert Keras file to tflite file
+12. ```xxd -i model.tflite model.h``` Convert tflite file to a c-header file (This needs xxd installed, several ways to do this also can do it from a web page) 
 
 
 Non of the above work for me that is why I have the other options
