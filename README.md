@@ -11,7 +11,7 @@ Not presently working on windows, hopefully that changes.
 1. Go to the location you downloaded the model .json and model.bin files from https://hpssjellis.github.io/tinyMLjs/public/index.html
 2. Instal venv  ```sudo apt install python3.12-venv```    so you can work in an environment and not have other things mess it up
 3. Install a virtual environment  ```python3 -m venv myenv10```
-4. Activate that environment (note it has a folder you can stay out of )  ```source myenv10/bin/activate```
+4. Activate that environment (note it has a folder you can stay out of )  ```source myenv10/bin/activate``` or on windows ```myenv10\scripts\activate```
 5. ```pip install tensorflow```
 6. ```pip install tensorflowjs```
 7. ```pip install tensorRT```
